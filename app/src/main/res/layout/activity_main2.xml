@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    tools:context=".Main">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="731dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:orientation="vertical">
+
+
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="428dp"-->
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/imone" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="300dp"
+                android:text="смотреть" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="685dp"
+                android:text="Вы смотрели"
+                android:layout_marginLeft="15dp"
+                android:textColor="#EF3A01"
+                android:textSize="25dp" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_below="@id/imageView8"
+                android:background="#C3332973"
+                app:menu="@menu/menu" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageView4"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="272dp"-->
+            <!--                android:layout_below="@id/textView3"-->
+            <!--                android:layout_marginTop="4dp"-->
+            <!--                tools:srcCompat="@drawable/fir" />-->
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="272dp"
+                android:layout_below="@id/textView3"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/lastmovie" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="86dp"
+                android:layout_height="89dp"
+                android:layout_below="@id/textView3"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginTop="510dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/fir" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        app:srcCompat="@drawable/sec" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="260dp"
+                        app:srcCompat="@drawable/three" />
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="390dp"
+                        app:srcCompat="@drawable/ferd" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="120dp"
+                android:text="     The \n   Magicians"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="720dp"
+        android:background="#1C1A19"
+
+        app:menu="@menu/secondmenu" />
+
+</RelativeLayout>

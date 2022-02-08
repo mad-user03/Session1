@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    tools:context=".SignInScene">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:text="WorldCinema"
+        android:textColor="@color/orange"
+        android:textSize="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="385dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="370dp"
+        android:background="#332973"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:outlineSpotShadowColor="#AFAFAF"
+        android:textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="382dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="20dp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowColor="#AFAFAF"
+        android:shadowRadius="0.1"
+        android:background="#332973"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#AFAFAF" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="600dp"
+        android:onClick="onClickTopButton"
+        android:text="Войти" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="655dp"
+        android:onClick="onClickckck"
+        android:background="@drawable/fr"
+        android:text="" />
+</RelativeLayout>
