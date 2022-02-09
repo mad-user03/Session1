@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/drawable/buttonresfile.xml" value="0.2985" />
+        <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/drawable/ch.xml" value="0.3505" />
+        <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/drawable/gradient.xml" value="0.3505" />
+        <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/drawable/tvbackg.xml" value="0.3505" />
         <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/layout/activity_main2.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/layout/activity_movie_scene.xml" value="0.33" />
         <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/layout/activity_sign_in_scene.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/layout/activity_sign_up_scene.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/admin/Downloads/Session1/app/src/main/res/layout/activity_sign_up_scene2.xml" value="0.25" />
