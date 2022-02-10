@@ -33,6 +33,7 @@
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="130dp"
+                android:onClick="WatchButton"
                 android:layout_marginTop="300dp"
                 android:text="смотреть" />
 
