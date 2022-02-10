@@ -7,10 +7,22 @@
     android:background="#332973"
     tools:context=".Main">
 
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav"
+
+        android:layout_height="74dp"
+        android:layout_marginTop="720dp"
+        android:background="#1C1A19"
+        app:menu="@menu/secondmenu" />
+
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="731dp">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -20,12 +32,20 @@
 
             <!--                android:layout_width="match_parent"-->
             <!--                android:layout_height="428dp"-->
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
 
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
                 app:srcCompat="@drawable/imone" />
 
             <Button
@@ -33,17 +53,17 @@
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="130dp"
-                android:onClick="WatchButton"
                 android:layout_marginTop="300dp"
+                android:onClick="WatchButton"
                 android:text="смотреть" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="685dp"
                 android:text="Вы смотрели"
-                android:layout_marginLeft="15dp"
                 android:textColor="#EF3A01"
                 android:textSize="25dp" />
 
@@ -61,12 +81,15 @@
             <!--                android:layout_below="@id/textView3"-->
             <!--                android:layout_marginTop="4dp"-->
             <!--                tools:srcCompat="@drawable/fir" />-->
+
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="272dp"
                 android:layout_below="@id/textView3"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="70dp"
+                android:onClick="imClick"
                 android:src="@drawable/lastmovie" />
 
             <ImageButton
@@ -76,6 +99,8 @@
                 android:layout_below="@id/textView3"
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="80dp"
+                android:background="@color/invisiable"
+                android:onClick="onPlay"
                 app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
 
             <HorizontalScrollView
@@ -107,12 +132,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="260dp"
                         app:srcCompat="@drawable/three" />
+
                     <ImageView
                         android:id="@+id/imageView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="390dp"
                         app:srcCompat="@drawable/ferd" />
+
+
                 </RelativeLayout>
             </HorizontalScrollView>
 
@@ -126,15 +154,53 @@
                 android:textColor="#FFFFFF"
                 android:textSize="30dp" />
 
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton4"
+                android:layout_marginTop="75dp"
+
+                app:srcCompat="@drawable/gradientforlowline" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageButton4"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="75dp"
+                android:background="@color/invisiable"
+                app:srcCompat="@drawable/gradientforlowline" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="75dp"
+                android:text="12:44"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+
         </RelativeLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_marginTop="720dp"
-        android:background="#1C1A19"
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="600dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/nav"
+        android:layout_marginTop="-140dp"
+        android:scaleX="1.5"
+        app:srcCompat="@drawable/gradientforlowline" />
 
-        app:menu="@menu/secondmenu" />
+
+
+
 
 </RelativeLayout>
